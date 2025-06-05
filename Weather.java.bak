@@ -1,0 +1,12 @@
+class Weather
+{
+	public static double censius(double temp)
+	{
+		int tf=temp*9/5+32;
+		return tf;
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println(censius(24.5));
+	}
+}

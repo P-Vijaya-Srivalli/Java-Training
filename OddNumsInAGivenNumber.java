@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class OddNumsInAGivenNumber 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number");
+		int num=sc.nextInt();
+		int num1=num;
+		while(num>0)
+		{
+			int ld=num%10;
+			if(ld%2==1)
+			{
+				System.out.println(ld);
+			}
+			num=num/10;
+		}
+	}
+}
+  

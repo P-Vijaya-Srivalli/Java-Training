@@ -1,0 +1,33 @@
+import java.util.Scanner;
+class  SpiltTheNuberByHalfWhenCountIsEven
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the Number");
+		int num=sc.nextInt();
+		int count=0;
+		int temp=num;
+		while(num>0)
+		{
+			count++;
+			num=num/10;
+		}
+		if(count%2==0)
+		{
+			int div=1;
+			for(int i=1;i<=count/2;i++)
+			{
+				div=div*10;
+			}
+			int firsthalf=temp/div;
+			int secondhalf=temp%div;
+			System.out.println("the first half :- "+firsthalf);
+			System.out.println("the Second half :- "+secondhalf);
+		}
+		else
+		{
+			Sytem.out.println("cannot spilt the "+temp);
+		}
+	}
+}

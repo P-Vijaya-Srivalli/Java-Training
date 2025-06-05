@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class  ExpoToNvalue
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the num");
+		int num=sc.nextInt();
+		int count=0;
+		int temp=num;
+		while(num>0)
+		{
+			count++;
+			num=num/10;
+		}
+			int expo=1;	
+			for(int i=1;i<=count;i++)
+		{
+				expo=expo*temp;
+		}
+		System.out.println("the expotential value of "+temp+"to the power of "+count+"is :-"+expo);
+	}
+}

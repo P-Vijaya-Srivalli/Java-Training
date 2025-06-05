@@ -1,0 +1,19 @@
+class  Multiplication
+{
+	public static void table(int n)
+	{
+		for(int i=1;i<=10;i++)
+		{
+			
+			System.out.println(+n"X"+i+"="+(n*i));
+		}
+	}
+
+	public static void main(String[] args) 
+	{
+		Multiplication m1=new Multiplication()
+		m1.table(5);
+		System.out.println("...........................");
+		m1.table(8);
+	}
+}

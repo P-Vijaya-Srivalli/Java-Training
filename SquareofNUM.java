@@ -1,0 +1,12 @@
+import java.util.Scanner;
+class SquareofNUM
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter num");
+		int num=sc.nextInt();
+		int Squ=num*num;
+		System.out.println( "Square of the num is: "+Squ);
+	}
+}

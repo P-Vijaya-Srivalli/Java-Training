@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class  NextLineRequiredornot
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter single word string");
+		String s1=sc.next();
+		sc.nextLine();
+		System.out.println("enter a sentence");
+		String s2=sc.nextLine();
+		System.out.println("--------------");
+		System.out.println("s1 value : "+s1);
+		System.out.println("s2 value : "+s2);
+	}
+}

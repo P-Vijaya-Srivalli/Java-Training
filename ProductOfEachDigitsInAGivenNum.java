@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class  ProductOfEachDigitsInAGivenNum
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the NUmber");
+		int num=sc.nextInt();
+		int count=0;
+		int temp=num;
+		int num1=num;
+		while(num>0)
+		{
+			count++;
+			num=num/10;
+		}
+		int pro=1;
+		while(temp>0)
+		{
+			int ld=temp%10;
+			pro=pro*ld;
+			temp=temp/10;
+		}
+		System.out.println("Product of Each Digit present in "+num1+"is :- "+pro);
+	}
+}

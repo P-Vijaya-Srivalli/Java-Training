@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class SumofFactofEachDigit 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the Number");
+		int num=sc.nextInt();
+		int add=0;
+		while(num>0)
+		{
+			int ld=num%10;
+			int sum=0;
+			for(int i=1;i<=ld;i++)
+			{
+				if(ld%i==0)
+				{
+					sum=sum+i;
+				}
+			}
+			System.out.println("the sum Factors of"+ld+"="+sum);
+			num=num/10;
+			add=add+sum;
+		}
+		System.out.println(+add);
+	}
+}

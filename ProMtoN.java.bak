@@ -1,0 +1,24 @@
+/*class  
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+	}
+}*/
+import java.util.Scanner;
+class ProMtoN 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the value of m and n");
+		int m=sc.nextInt(),n=sc.nextInt();
+		int pro=1;
+		for(int i=m;i<=n;i++)
+		{
+			pro=pro+i;
+		}
+		System.out.println("the sum of num's between M and N are: "+sum);
+	}
+}
+

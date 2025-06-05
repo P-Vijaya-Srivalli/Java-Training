@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class BelowRequirements 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the Number");
+		int num=sc.nextInt();
+		int squ=num*num;
+		System.out.println("the Square "+squ);
+		int temp=squ;
+		int count=0;
+		while(num>0)
+		{
+			count++;
+			num=num/10;
+		}
+		int div=1;
+		for(int i=0;i<=count;i++)
+		{
+			div=div*10;
+		}
+		for(int i=0;i<=count;i++)
+		{
+			squ=squ%div;
+		}
+		System.out.println(squ);
+
+	}
+}

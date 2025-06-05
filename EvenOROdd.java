@@ -1,0 +1,20 @@
+//WAP to check wheater the given number is Even or Odd
+import java.util.Scanner;
+class  EvenOROdd
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Number");
+		int num=sc.nextInt();
+		if(num%2==0)
+		{
+			System.out.println(+num+" is Even Number");
+		}
+		else
+		{
+			System.out.println(+num+" is Odd Number");
+		}
+	
+	}
+}

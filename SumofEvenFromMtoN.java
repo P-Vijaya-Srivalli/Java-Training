@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class  SumofEvenFromMtoN
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter value of M and N");
+		int M=sc.nextInt();
+		int N=sc.nextInt();
+		int sum=0;
+		for(int i=M;i<=N;i++)
+		{
+			if(i%2==0)
+			{
+				sum=sum+i;
+			}
+		}
+		System.out.println("The sum of  Even Numbers between M to N is:"+sum);
+	}
+}

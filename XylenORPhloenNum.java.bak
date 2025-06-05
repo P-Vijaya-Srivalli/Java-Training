@@ -1,0 +1,31 @@
+import java.util.Scanner;
+class XylenORPhloenNum 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the NUmber");
+		int num=sc.nextInt();
+		int temp=num;
+		int ld=num%10;
+		int num1=num/10;
+		int sumofmean=0;
+		int sumofextrem=0;
+		while(num1>=10)
+		{
+			int dl=num%10;
+			sumofmean=sumofmean+dl;
+			num1=num1/10;
+		}
+		sumofextrem=ld+num1;
+		if(sumofextrem==sumofmean)
+		{
+			System.out.println(temp+" is a XYLEN NUMBER");
+		}
+		else
+		{
+			System.out.println(temp+" is a PHLOEN NUMBER");
+		}
+
+	}
+}

@@ -1,0 +1,41 @@
+import java.util.Scanner;
+class  TechNumber
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the Number");
+		int num=sc.nextInt();
+		int count=0;
+		int temp=num;
+		int num1=temp;
+		while(num>0)
+		{
+			count++;
+			num=num/10;
+		}
+		if(count%2==0)
+		{
+			int div=1;
+			for(int i=1;i<=count/2;i++)
+			{
+				div=div*10;
+			}
+			int firsthalf=temp/div;
+			int secondhalf=temp%div;
+			//System.out.println("the first half :- "+firsthalf);
+			//System.out.println("the Second half :- "+secondhalf);
+			int sum=firsthalf+secondhalf;
+			int squ=sum*sum;
+			if(squ==num1)
+			{
+				System.out.println(num1+"is a TECH NUMBER");
+			}
+			else
+			{
+				System.out.println(num1+" is not a TECH NUMBER");
+			}
+
+		}
+	}
+}

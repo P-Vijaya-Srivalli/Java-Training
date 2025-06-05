@@ -1,0 +1,32 @@
+/*class  
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+	}
+}*/
+import java.util.Scanner;
+class DigFacSum 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the Number");
+		int num=sc.nextInt();
+		int sum=0;
+		while(num!=0)
+		{
+			int ld=num%10;
+			int fact=1;
+			for(int i=1;i<=ld;i++)
+			{
+				fact=fact*i;
+			}
+			System.out.println("the factorial of the"+ld+"is"+fact);
+			sum=sum+fact;
+			num=num/10;
+		}
+		System.out.println(" the sum of all the factorial of each digit "+sum);
+	}
+}
+
